@@ -4,7 +4,7 @@
     <hr>
     <button (click)="showPanel = !showPanel" class="btn btn-primary">Show Panel</button>
     <hr>
-    <div class="panel panel-default" *ngIf="showPanel" @panelState>
+    <div class="panel panel-default" *ngIf="showPanel" [@panelState]="showParagraph">
       <div class="panel-heading">Let's see what query does</div>
       <div class="panel-body">
         <p>query() gives you a lot of flexibility!</p>
